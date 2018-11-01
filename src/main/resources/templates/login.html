@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content=""/>
+  <meta name="author" content="Dashboard"/>
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina"/>
+  <title>Cabinet</title>
+
+  <!-- Favicons -->
+  <link href="/favicon.png" rel="icon"/>
+  <link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="/bootstrap.min.css" rel="stylesheet"/>
+  <!--external css-->
+   <link href="/webjars/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+   <link href="/webjars/nprogress/0.2.0/nprogress.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="/stylelogin.css" rel="stylesheet"/>
+  <link href="/style-responsivelogin.css" rel="stylesheet"/>
+  
+ 
+</head>
+
+<body>
+  <!-- **********************************************************************************************************************************************************
+      MAIN CONTENT
+      *********************************************************************************************************************************************************** -->
+  <div id="login-page">
+    <div class="container">
+      <form class="form-login"  th:action="@{/login}" method="post">
+        <h2 class="form-login-heading">Cabinet Médical</h2>
+        <div class="login-wrap">
+            <input type="text" name="username" class="form-control" placeholder="username" />
+         
+          <input type="password" name="password"  class="form-control" placeholder="password"/>
+          
+          <button class="btn btn-theme btn-block"  type="submit" ><i class="fa fa-lock"></i> CONNEXION</button>
+         
+      
+        </div>
+     
+        <!-- modal -->
+      </form>
+    </div>
+  </div>
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="/jquery.min.js"></script>
+  <script src="/bootstrap.min.js"></script>
+  <!--BACKSTRETCH-->
+  <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
+  <script type="text/javascript" src="/jquery.backstretch.min.js"></script>
+  <script>
+    $.backstretch("img/login-bg.jpg", {
+      speed: 500
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" whenNoDataType="NoPages" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f75de0bc-f3b8-47d8-9554-6772606d2399">
+	<field name="numerorecu" class="java.lang.Long"/>
+	<field name="num_pa" class="java.lang.Long"/>
+	<field name="montantrecu" class="java.lang.Double"/>
+	<field name="daterecu" class="java.util.Date"/>
+	<field name="heurerecu" class="java.util.Date"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="100" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="229" y="0" width="70" height="35" uuid="03cf2c99-b0d0-4123-b63f-4584a7755e8c"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Recu]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="53" splitType="Stretch">
+			<staticText>
+				<reportElement x="15" y="19" width="96" height="20" uuid="df9ef593-5c18-4f2b-85f8-2308a971ff3d"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[numero]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="152" y="19" width="102" height="20" uuid="37089496-0bbd-4169-ab90-85d789da82e2"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[montant]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="299" y="19" width="71" height="20" uuid="4e54c53f-340c-4751-9374-baadbafc4ffa"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="19" width="77" height="20" uuid="c13b6d3f-3ecc-487b-915e-194efee3c80d"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[heure]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="15" y="31" width="81" height="20" uuid="3ecd0182-178c-4823-b0d7-490acbcf81d8"/>
+				<textFieldExpression><![CDATA[$F{numerorecu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="31" width="87" height="20" uuid="c5700686-de02-41c0-a10a-0b6647a6b641"/>
+				<textFieldExpression><![CDATA[$F{montantrecu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="299" y="31" width="71" height="20" uuid="2aeedd6d-3959-42e5-bde6-7d7011e585b4"/>
+				<textFieldExpression><![CDATA[$F{daterecu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="31" width="77" height="20" uuid="9ab1871c-573a-4977-af5f-b2f035e3e2f9"/>
+				<textFieldExpression><![CDATA[$F{heurerecu}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement mode="Transparent" x="0" y="14" width="512" height="60" uuid="a37464ee-1515-4db2-87be-544cf6563474"/>
+			</rectangle>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

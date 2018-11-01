@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>AccueilMedecin</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="/myStyle.css"/>
+    
+        <link href="/webjars/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet">
+    
+         <link href="/webjars/nprogress/0.2.0/nprogress.css" rel="stylesheet">
+         
+         <link href="/custom.min.css" rel="stylesheet">
+    </head>
+    <body class="nav-md">
+        
+        
+         <div class="container body">
+         <div class="main_container">
+         <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="#" class="site_title" th:href="@{/AccueilMed/accueil}"><i class="fa  fa-medkit"></i> <span>CabinetCare!</span></a>
+            </div>
+        
+           
+             <div class="clearfix"></div>
+
+            
+            <div data-th-replace="accmed"></div>
+            
+
+            <br />
+
+        
+            <div data-th-replace="gamed"></div>
+            
+
+            
+           
+           
+             
+             
+          </div>
+        </div>
+            
+             <div data-th-replace="topmed"></div>
+        
+       
+        
+         <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3>Fonctionnalités</h3>
+              </div>
+
+            </div>
+
+            <div class="clearfix"></div>
+            
+         
+
+            <div class="">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                  
+                   
+                     
+                     
+                    <img src="/imgmed.jpg" alt="">
+                    
+                 
+                
+                
+              </div>
+
+
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="panel panel-success">
+                      
+                      <div class="panel-heading">Consultation</div>
+                      
+                      <div class="panel-body">
+                          
+                          <ul>
+                              <li>Consulter un patient, enregistrer les données de cette action pour une meilleure Sauvegarde et sécurité des informations</li>
+                               <li>Recuperer la liste des consultations pour mieux suivre la progression de l'etat de santé du patient et en cas de besoin, supprimer et/ou Modifier l'une d'entre elles</li>
+                          </ul>
+                          
+                      </div>
+                      
+                      
+                  </div>
+              </div>
+              <div class="clearfix"></div>
+
+              <div class="col-md-6 col-sm-6 col-xs-12 spacer">
+                  
+                       <div class="panel panel-success">
+                      
+                      <div class="panel-heading">Dossier</div>
+                      
+                      <div class="panel-body">
+                          
+                          <ul>
+                              <li>Numeriser vos dossiers medicaux pour eliminer toute risque de perte et d'inventuels problèmes</li>
+                               <li>Consulter les dossiers des patients pour une modification ou une suppression</li>
+                          </ul>
+                          
+                      </div>
+                      
+                      
+                  </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-xs-12 spacer">
+                  
+                       <div class="panel panel-success">
+                      
+                      <div class="panel-heading">Ordonnance</div>
+                      
+                      <div class="panel-body">
+                          
+                          <ul>
+                              <li>Creer des ordonnances pour de pateints</li>
+                               <li>Et en cas de besoin consulter la liste de ordonnances delivrées</li>
+                          </ul>
+                          
+                      </div>
+                      
+                      
+                  </div>
+               
+              </div>
+              <div class="clearfix"></div>
+
+
+            
+
+             
+
+            </div>
+            <div class="clearfix"></div>
+
+
+           
+        </div>
+      </div>
+     </div>
+       </div>
+
+    </body>
+    
+    
+    <script src="/webjars/jquery/2.2.3/jquery.min.js"></script>
+    
+    <script src="/webjars/jquery/2.2.3/jquery.js"></script>
+    <!-- Bootstrap -->
+    <script src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="/webjars/fastclick/1.0.6/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="/webjars/nprogress/0.2.0/nprogress.js"></script>
+    
+    <script src="/webjars/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js"></script>
+  
+    <!-- bootstrap-progressbar -->
+   
+    
+   
+   
+
+    <!-- Custom Theme Scripts -->
+    <script src="/custom.min.js"></script>
+</html>

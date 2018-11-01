@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"/>
+<title>Modifier les Informations</title>
+<link rel="stylesheet" type="text/css" href="/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="/myStyle.css"/>
+
+ <!-- Font Awesome -->
+        <link href="/webjars/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+         <link href="/webjars/nprogress/0.2.0/nprogress.css" rel="stylesheet">
+         
+         <link href="/custom.min.css" rel="stylesheet">
+    <!-- iCheck -->
+   
+
+    <!-- Custom Theme Style -->
+    <link href="/custom.min.css" rel="stylesheet">
+</head>
+<body layout:fragment="content" class="nav-md">
+    
+    
+         <div class="container body">
+         <div class="main_container">
+         <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="#" class="site_title" th:href="@{/AccueilMed/accueil}"><i class="fa  fa-medkit"></i> <span>CabinetCare!</span></a>
+            </div>
+        
+           
+             <div class="clearfix"></div>
+
+            
+            <div data-th-replace="accmed"></div>
+            
+
+            <br />
+
+        
+            <div data-th-replace="gamed"></div>
+            
+
+            
+           
+           
+             
+             
+          </div>
+        </div>
+            
+             <div data-th-replace="topmed"></div>
+    
+        <div  class="col-md-10 col-sm-6 col-xs-12 col-md-offset-2  spacer">
+
+           <div class="panel panel-primary">
+
+               <div class="panel-heading">Dossier Medical</div>
+
+               <div class="panel-body"> 
+
+                   <form th:action="@{UpdateDossier}" method="post" th:object="${dossier}">
+                       
+                       <div class="form-group">
+                           <label class="control-label">Numero Dossiert:</label>
+                           <label th:text="*{numerodossier}" class="form-control"></label>
+                           <span class="text-danger" th:errors="*{numerodossier}"></span>
+                       </div>
+
+                       <div class="form-group">
+                           <label class="control-label">Numero Patient:</label>
+                           <input type="text" th:field="*{patient.numeropatient}" class="form-control"/>
+                           <span class="text-danger" th:errors="*{patient.numeropatient}"></span>
+                       </div>
+                       
+                      <div class="form-group">
+                           <label class="control-label">Motif:</label>
+                           <textarea th:field="*{motif}" rows="10" cols="50" class="form-control"></textarea>
+                           <span class="text-danger" th:errors="*{motif}"></span>
+                       </div>
+                       <div class="form-group">
+                           <label class="control-label">Histoire:</label>
+                           <textarea th:field="*{histoire}" rows="10" cols="50" class="form-control"></textarea>
+                           <span class="text-danger" th:errors="*{histoire}"></span>
+                       </div>
+                       
+                        <div class="form-group">
+                           <label class="control-label">Antecedents :</label>
+                           <textarea th:field="*{antecedents}" rows="10" cols="50" class="form-control"></textarea>
+                           <span class="text-danger" th:errors="*{antecedents}"></span>
+                           
+                       </div>
+                       
+                       <div class="form-group">
+                           <label class="control-label">Examen:</label>
+                           <textarea th:field="*{examen}" rows="10" cols="50" class="form-control"></textarea>
+                           <span class="text-danger" th:errors="*{examen}"></span>
+                       </div>
+                      
+                       
+                       
+                       <div >
+                           
+                           <button type="submit" class="btn btn-primary">Enregistrer</button>
+                       </div>
+
+                   </form>
+
+               </div>
+
+           </div>
+
+       </div>
+             
+     </div>
+             
+             
+   </div>
+
+</body>
+ <script src="/webjars/jquery/2.2.3/jquery.min.js"></script>
+    
+    <script src="/webjars/jquery/2.2.3/jquery.js"></script>
+    <!-- Bootstrap -->
+    <script src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="/webjars/fastclick/1.0.6/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="/webjars/nprogress/0.2.0/nprogress.js"></script>
+    
+    <script src="/webjars/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js"></script>
+    
+    <script src="/custom.min.js"></script>
+
+</html>

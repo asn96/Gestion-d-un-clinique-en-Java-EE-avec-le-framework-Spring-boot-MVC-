@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+    
+    <head>
+        
+        
+    </head>
+    
+    <body>
+   
+    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>Taches</h3>
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-home"></i> Accueil <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="#" th:href="@{/AccueilAd/accueil}" >page accueil</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-stethoscope"></i> Medecin <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="#" th:href="@{/Medecin/form1}">Nouveau Medecin</a></li>
+                      <li><a href="#" th:href="@{/Medecin/list1}">Liste des Medecins</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li><a><i class="fa  fa-female"></i>Secretaire <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="#" th:href="@{/Secretaire/form2}">Enregistrer une Secretaire</a></li>
+                      <li><a href="#" th:href="@{/Secretaire/list2}">Liste des Secretaires</a></li>
+                      
+                    </ul>
+                  </li>
+                  
+                    <li><a><i class="fa  fa-users"></i>Patient<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="#" th:href="@{/Compte/form}">Creer un Compte</a></li>
+                      <li><a href="#" th:href="@{/Compte/list}">Liste des Comptes</a></li>
+                      
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+        
+        </body>
+</html>

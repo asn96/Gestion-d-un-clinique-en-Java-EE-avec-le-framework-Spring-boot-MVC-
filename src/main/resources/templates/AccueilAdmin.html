@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>AccueilAdministrateur</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="/myStyle.css"/>
+             
+    <!-- Font Awesome -->
+        <link href="/webjars/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+         <link href="/webjars/nprogress/0.2.0/nprogress.css" rel="stylesheet">
+         
+         <link href="/custom.min.css" rel="stylesheet">
+    <!-- iCheck -->
+   
+
+    <!-- Custom Theme Style -->
+    <link href="/custom.min.css" rel="stylesheet">
+    </head>
+    <body class="nav-md">
+        
+        <div class="container body">
+         <div class="main_container">
+         <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="#" th:href="@{/AccueilAd/accueil}" class="site_title"><i class="fa  fa-medkit"></i> <span>CabinetCare!</span></a>
+            </div>
+        
+           
+             <div class="clearfix"></div>
+
+            
+            <div data-th-replace="fragmentaccad"></div>
+            
+
+            <br />
+
+        
+            <div data-th-replace="fragmentgaad"></div>
+            
+
+            
+           
+           
+             
+             
+          </div>
+        </div>
+            
+             <div data-th-replace="fragmenttopad"></div>
+             
+                      <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3>Fonctionnalités</h3>
+              </div>
+
+            </div>
+
+            <div class="clearfix"></div>
+            
+         
+
+            <div class="">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                  
+                   
+                     
+                     
+                    <img src="/imgad.png" alt="">
+                    
+                 
+                
+                
+              </div>
+
+
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="panel panel-success">
+                      
+                      <div class="panel-heading">Medecin</div>
+                      
+                      <div class="panel-body">
+                          
+                          <ul>
+                              <li>Enregsitrer un nouveau medecin dans la base de données pour qu'il puisse se connecter</li>
+                               <li>Consulter la liste des medecins enregistrés dans la base, supprimer ou modifier l'un d'entre eux en cas de besoin </li>
+                          </ul>
+                          
+                      </div>
+                      
+                      
+                  </div>
+              </div>
+              <div class="clearfix"></div>
+
+              <div class="col-md-6 col-sm-6 col-xs-12 spacer">
+                  
+                       <div class="panel panel-success">
+                      
+                      <div class="panel-heading">Secretaire</div>
+                      
+                      <div class="panel-body">
+                          
+                          <ul>
+                              <li>Ajouter une secretaire pour qu'elle puisse remplir sa tache</li>
+                               <li>Consulter les secretaires pour une modification ou une suppression</li>
+                          </ul>
+                          
+                      </div>
+                      
+                      
+                  </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-xs-12 spacer">
+                  
+                       <div class="panel panel-success">
+                      
+                      <div class="panel-heading">Patient</div>
+                      
+                      <div class="panel-body">
+                          
+                          <ul>
+                              <li>Creer un compte pour un patient deja enregitré par le secretaire</li>
+                               <li>Acceder a la liste des patients possèdents un compte pour une inventuelle suppression ou modification</li>
+                          </ul>
+                          
+                      </div>
+                      
+                      
+                  </div>
+               
+              </div>
+              <div class="clearfix"></div>
+
+
+            
+
+             
+
+            </div>
+            <div class="clearfix"></div>
+
+
+           
+        </div>
+      </div>
+          
+      
+              </div>
+
+       </div>
+       
+    </body>
+    
+     <script src="/webjars/jquery/2.2.3/jquery.min.js"></script>
+    
+    <script src="/webjars/jquery/2.2.3/jquery.js"></script>
+    <!-- Bootstrap -->
+    <script src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="/webjars/fastclick/1.0.6/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="/webjars/nprogress/0.2.0/nprogress.js"></script>
+    
+    <script src="/webjars/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js"></script>
+    
+    <script src="/custom.min.js"></script>
+</html>

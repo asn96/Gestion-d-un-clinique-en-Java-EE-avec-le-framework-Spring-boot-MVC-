@@ -1,0 +1,63 @@
+nav {
+   text-align: center;
+   display: block;
+   width: 852px;
+   height: 40px;
+   margin-top: 10px;
+   margin-bottom: 5px;
+  
+
+}
+nav ul {
+   list-style: none;
+   margin:0;
+   }
+nav ul li {
+   padding:15px;;
+   display:inline-block;
+   position: relative;
+   cursor: pointer!important;
+}
+
+
+nav a {
+	cursor: pointer;
+   display:block;
+   background: blue;
+   color:#fff;
+   text-decoration: none;
+   font-size: 25px;
+}
+
+
+
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+
+
+div a{
+   width: 150px;
+   margin-left: -22px;
+   color:#fff;
+   text-decoration: none;
+   font-size: 19px;
+	text-decoration: none;
+}
+
+div li{
+   text-decoration: none;
+}
+
+div ul{
+   list-style: none;
+}
+
+input .submit{
+   color: white;
+   font-size: 20px;
+   width: 100px;
+}

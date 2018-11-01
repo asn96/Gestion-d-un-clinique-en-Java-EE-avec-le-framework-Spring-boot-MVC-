@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html  xmlns:th="http://www.thymeleaf.org">
+   
+    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>Taches</h3>
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-home"></i> Accueil <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="#" th:href="@{/AccueilSec/accueil}">Page accueil</a></li>
+                     
+                    </ul>
+                  </li>
+                  <li><a><i class="fa  fa-users"></i> Patient <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="#" th:href="@{/Patient/form}">Enregsitrer un Patient</a></li>
+                      <li><a href="#" th:href="@{/Patient/list}">Liste des Patients</a></li>
+               
+                    </ul>
+                  </li>
+                  <li><a><i class="fa  fa-file-o  "></i> Recu <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="#" th:href="@{/Recu/form}">Delivrer un Recu</a></li>
+                      <li><a href="#" th:href="@{/Recu/list}">Liste des Recus</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-table"></i> Rendez Vous <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="#"  th:href="@{/Rdv/form}">Programmer un Rendez Vous</a></li>
+                      <li><a href="#"  th:href="@{/Rdv/list}">Liste des Rendez Vous</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-euro"></i> Depenses <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="#"  th:href="@{/Depense/form}" >Enregistrer une Depense</a></li>
+                      <li><a href="#"   th:href="@{/Depense/list}">Liste des Depenses</a></li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </div>
+          
+
+            </div>
+</html>

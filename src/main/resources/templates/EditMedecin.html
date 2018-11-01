@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Modifier les Informations</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="/myStyle.css"/>
+             
+    <!-- Font Awesome -->
+        <link href="/webjars/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+         <link href="/webjars/nprogress/0.2.0/nprogress.css" rel="stylesheet">
+         
+         <link href="/custom.min.css" rel="stylesheet">
+    <!-- iCheck -->
+   
+
+    <!-- Custom Theme Style -->
+    <link href="/custom.min.css" rel="stylesheet">
+    </head>
+    <body class="nav-md">
+        
+        <div class="container body">
+         <div class="main_container">
+         <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="#" class="site_title" th:href="@{/AccueilAd/accueil}"><i class="fa  fa-medkit"></i> <span>CabinetCare!</span></a>
+            </div>
+        
+           
+             <div class="clearfix"></div>
+
+            
+            <div data-th-replace="fragmentaccad"></div>
+            
+
+            <br />
+
+        
+            <div data-th-replace="fragmentgaad"></div>
+            
+
+            
+           
+           
+             
+             
+          </div>
+        </div>
+            
+             <div data-th-replace="fragmenttopad"></div>
+          
+        
+        <div  class="col-md-10 col-sm-6 col-xs-12 spacer col-md-offset-2">
+
+           <div class="panel panel-primary">
+
+               <div class="panel-heading"> Enregistrement d'un Medecin</div>
+
+               <div class="panel-body"> 
+
+                   <form th:action="@{UpdateMedecin}" method="post" th:object="${medecin}">
+                       
+                       <div class="form-group">
+                           <label class="control-label">Matricule:</label>
+                           <label th:text="*{matriculemedecin}" class="form-control"></label>
+                           <span class="text-danger" th:errors="*{matriculemedecin}"></span>
+                       </div>
+
+                       <div class="form-group">
+                           <label class="control-label">Nom:</label>
+                           <input type="text" th:field="*{nommedecin}" class="form-control"/>
+                           <span class="text-danger" th:errors="*{nommedecin}"></span>
+                       </div>
+                       <div class="form-group">
+                           <label class="control-label">Prenom:</label>
+                           <input type="text" th:field="*{prenommedecin}" class="form-control"/>
+                           <span class="text-danger" th:errors="*{prenommedecin}"></span>
+                       </div>
+                       <div class="form-group">
+                           <label class="control-label">Date de naissance:</label>
+                           <input type="date" th:field="*{datenaissance}" class="form-control"/>
+                           <span class="text-danger" th:errors="*{datenaissance}"></span>
+                       </div>
+                       <div class="form-group">
+                           <label class="control-label">Lieu de naissance:</label>
+                           <input type="text" th:field="*{lieunaissance}" class="form-control"/>
+                           <span class="text-danger" th:errors="*{lieunaissance}"></span>
+                       </div>
+                       <div class="form-group">
+                           
+                           <label class="control-label">Sexe:</label>
+                           <input type="text" th:field="*{sexemedecin}" class="form-control"/>
+                           <span class="text-danger" th:errors="*{sexemedecin}"></span>
+                           
+                       </div>
+                       <div class="form-group">
+                           
+                           <label class="control-label">Specialte:</label>
+                           <input type="text" th:field="*{specialite}" class="form-control"/>
+                           <span class="text-danger" th:errors="*{specialite}"></span>
+                           
+                       </div>
+                       <div class="form-group">
+                           <label class="control-label">Adresse:</label>
+                           <input type="text" th:field="*{adressemedecin}" class="form-control"/>
+                           <span class="text-danger" th:errors="*{adressemedecin}"></span>
+                       </div>
+                       <div class="form-group">
+                           <label class="control-label">Telephone:</label>
+                           <input type="text" th:field="*{telephonemedecin}" class="form-control"/>
+                           <span class="text-danger" th:errors="*{telephonemedecin}"></span>
+                       </div>
+                       
+                       <div class="form-group">
+                           <label class="control-label">Login:</label>
+                           <input type="text" th:field="*{login}" class="form-control"/>
+                           <span class="text-danger" th:errors="*{login}"></span>
+                       </div>
+                       
+                       <div class="form-group">
+                           <label class="control-label">Password:</label>
+                           <input type="password" th:field="*{password}" class="form-control"/>
+                           <span class="text-danger" th:errors="*{password}"></span>
+                       </div>
+                       
+                       <div >
+                           
+                           <button type="submit" class="btn btn-primary">Enregistrer</button>
+                       </div>
+
+                   </form>
+
+               </div>
+
+           </div>
+             </div>
+              </div>
+
+       </div>
+    </body>
+    
+     <script src="/webjars/jquery/2.2.3/jquery.min.js"></script>
+    
+    <script src="/webjars/jquery/2.2.3/jquery.js"></script>
+    <!-- Bootstrap -->
+    <script src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="/webjars/fastclick/1.0.6/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="/webjars/nprogress/0.2.0/nprogress.js"></script>
+    
+    <script src="/webjars/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js"></script>
+    
+    <script src="/custom.min.js"></script>
+</html>
